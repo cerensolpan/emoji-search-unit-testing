@@ -4,6 +4,10 @@
   "license": "MIT",
   "homepage": "http://ahfarmer.github.io/emoji-search",
   "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1",
     "react-scripts": "^3.0.1"
