@@ -5,7 +5,7 @@ import "@testing-library/jest-dom/extend-expect";
 import App from "./App";
 
 describe("Tests", () => {
-  let header;
+  let header, results;
 
   beforeEach(() => {
     render(<App />);
@@ -15,4 +15,9 @@ describe("Tests", () => {
   it("should have header", () => {
     expect(header).toBeInTheDocument();
   });
+
+  it("should be render success emoji list",()=>{
+    results= screen.getAllByTestId("item");
+    expect(results.length).toBeGreaterThan(0);
+  })
 });

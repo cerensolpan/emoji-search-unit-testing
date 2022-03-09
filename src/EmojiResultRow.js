@@ -12,7 +12,7 @@ export default class EmojiResultsRow extends PureComponent {
     const codePointHex = this.props.symbol.codePointAt(0).toString(16);
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
     return (
-      <div
+      <div data-testid="item"
         className="component-emoji-result-row copy-to-clipboard"
         data-clipboard-text={this.props.symbol}
       >
